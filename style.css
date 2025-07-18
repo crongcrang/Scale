@@ -1,0 +1,164 @@
+/* General body styles */
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+}
+
+/* Header */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 30px;
+    background-color: #4CAF50;
+    color: white;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+header h1 {
+    margin: 0;
+    font-size: 1.8rem;
+    color: white;
+}
+
+#close-button {
+    background-color: #f44336;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 1rem;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+#close-button:hover {
+    background-color: #d32f2f;
+}
+
+/* Canvas container */
+.canvas-container {
+    display: flex;
+    justify-content: center;
+    overflow: hidden;
+    margin-top: 20px;
+    width: 100%;
+    height: auto;
+}
+
+canvas {
+    background-color: white;
+    border: 2px solid #333;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.2);
+    width: 1200px;  /* ขนาดของ canvas ที่คงที่ */
+    height: 300px;
+    object-fit: cover; /* ให้ canvas ตัดขอบซ้ายขวา */
+    object-position: center; /* ทำให้ canvas ตัดจากกลาง */
+}
+
+/* Control buttons */
+.controls {
+    display: flex;
+    justify-content: center; /* จัดเรียงปุ่มให้อยู่กลาง */
+    align-items: center;     /* จัดแนวตั้งให้อยู่ตรงกลาง */
+    margin-top: 20px;
+}
+
+button {
+    font-size: 1rem;
+    padding: 10px 15px;
+    margin: 5px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+    min-width: 90px;
+}
+
+#left-button {
+    background-color: #ff5e5e;
+    color: white;
+}
+
+#right-button {
+    background-color: #5eafff;
+    color: white;
+}
+
+#stop-button {
+    background-color: #f7c600;
+    color: black;
+}
+
+#reveal-button {
+    background-color: #4CAF50;
+    color: white;
+}
+
+button:hover {
+    opacity: 0.8;
+}
+
+/* Reading container */
+#reading-container {
+    margin-top: 20px;
+}
+
+#reading {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #333;
+    background: #fff;
+    display: inline-block;
+    padding: 10px 20px;
+    border-radius: 10px;
+    box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.2);
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 10px;
+    background-color: #333;
+    color: white;
+    margin-top: 40px;
+}
+
+/* Responsive design for mobile */
+@media (max-width: 600px) {
+    header {
+        padding: 10px;
+    }
+
+    h1 {
+        font-size: 1.5rem;
+    }
+
+    button {
+        font-size: 0.9rem;
+        padding: 8px 12px;
+    }
+
+    #reading {
+        font-size: 1.2rem;
+        padding: 8px 15px;
+    }
+
+    .canvas-container {
+        margin-top: 10px;
+    }
+
+    /* Adjust control buttons */
+    .controls {
+        flex-direction: row; /* ทำให้ปุ่มแสดงในแถวเดียว */
+        justify-content: center;
+    }
+
+    button {
+        width: auto;
+        max-width: 200px;
+    }
+}

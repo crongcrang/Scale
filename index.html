@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>โปรแกรมทดสอบการอ่านสเกล</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Header ส่วนหัว -->
+    <header>
+       <h1>ทดสอบการอ่านสเกล</h1>
+        
+    </header>
+<br>
+    <div class="canvas-container">
+        <canvas id="scale-canvas" width="1200" height="300"></canvas>
+    </div>
+
+    <div class="controls">
+        <button id="left-button">⬅ เลื่อนซ้าย</button>
+        <button id="stop-button">⏸ หยุด</button>
+        <button id="right-button">➡ เลื่อนขวา</button>
+    </div>
+
+    <div id="reading-container">
+        <div id="reading">ค่าที่อ่านได้: -</div>
+        <button id="reveal-button" disabled>💡 เฉลยคำตอบ</button>
+    </div>
+
+    <footer>
+        <p>จัดทำโดย ส่วนเครื่องมือตรวจอากาศชั้นบน</p>
+    </footer>
+
+    <script src="renderer.js"></script>
+</body>
+</html>
